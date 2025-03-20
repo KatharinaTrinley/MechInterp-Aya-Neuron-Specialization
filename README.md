@@ -55,12 +55,23 @@ The analysis identified 5 languages that appear in the EC40 dataset but are not 
 | kab  | kab      | Extremely-Low | 50k  |
 
 ### Language Families:
-| Family      | Languages                                                                 |
-|------------|---------------------------------------------------------------------------|
-| Germanic   | German, Dutch, Swedish, Danish, Afrikaans, Luxembourgish, Norwegian, Icelandic |
-| Romance    | French, Spanish, Italian, Portuguese, Romanian, Occitan, Asturian, Catalan |
-| Slavic     | Russian, Czech, Polish, Bulgarian, Ukrainian, Serbian, Belarusian, Bosnian |
-| Indo-Aryan | Hindi, Bengali, Kannada, Marathi, Sindhi, Gujarati, Nepali, Urdu          |
+| Family       | Languages                                                                                                                                                            |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Germanic    | German, Dutch, Swedish, Danish, Afrikaans, Luxembourgish, Norwegian, Icelandic, English, Frisian, Faroese, Yiddish, Scots                                            |
+| Romance     | French, Spanish, Italian, Portuguese, Romanian, Occitan, Asturian, Catalan, Galician, Corsican, Sicilian, Venetian, Aragonese                                        |
+| Slavic      | Russian, Czech, Polish, Bulgarian, Ukrainian, Serbian, Belarusian, Bosnian, Slovak, Slovene, Macedonian, Montenegrin                                                 |
+| Indo-Aryan  | Hindi, Bengali, Kannada, Marathi, Sindhi, Gujarati, Nepali, Urdu, Punjabi, Assamese, Sinhala, Konkani, Maithili, Rajasthani, Bhojpuri, Odia                         |
+| Afro-Asiatic | Arabic, Hebrew, Maltese, Amharic, Tigrinya, Hausa, Kabyle, Somali, Berber                                                                                          |
+
+---
+### EC40
+
+| Resource Level  | Languages                                        | Size  |
+|----------------|--------------------------------------------------|------|
+| High          | de, nl, fr, es, ru, cs, hi, bn, ar, he           | 5M   |
+| Medium        | sv, da, it, pt, pl, bg, kn, mr, mt, ha           | 1M   |
+| Low           | af, lb, ro, oc, uk, sr, sd, gu, ti, am           | 100k |
+| Extremely-Low | no, is, ast, ca, be, bs, ne, ur, kab, so         | 50k  |
 
 
 
