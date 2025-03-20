@@ -54,30 +54,13 @@ The analysis identified 5 languages that appear in the EC40 dataset but are not 
 | bs   | bos      | Extremely-Low | 50k  |
 | kab  | kab      | Extremely-Low | 50k  |
 
-### Language Details:
+### Language Families:
+| Family      | Languages                                                                 |
+|------------|---------------------------------------------------------------------------|
+| Germanic   | German, Dutch, Swedish, Danish, Afrikaans, Luxembourgish, Norwegian, Icelandic |
+| Romance    | French, Spanish, Italian, Portuguese, Romanian, Occitan, Asturian, Catalan |
+| Slavic     | Russian, Czech, Polish, Bulgarian, Ukrainian, Serbian, Belarusian, Bosnian |
+| Indo-Aryan | Hindi, Bengali, Kannada, Marathi, Sindhi, Gujarati, Nepali, Urdu          |
 
-1. **Occitan (oc/oci)**
-   - Resource Level: Low
-   - Data Size: 100k
-   - Romance language spoken mainly in southern France, Italy's Occitan Valleys, Monaco, and parts of Spain
 
-2. **Tigrinya (ti/tir)**
-   - Resource Level: Low
-   - Data Size: 100k
-   - Semitic language spoken in Eritrea and northern Ethiopia
-
-3. **Asturian (ast)**
-   - Resource Level: Extremely-Low
-   - Data Size: 50k
-   - Romance language spoken in the Spanish province of Asturias
-
-4. **Bosnian (bs/bos)**
-   - Resource Level: Extremely-Low
-   - Data Size: 50k
-   - South Slavic language spoken in Bosnia and Herzegovina
-
-5. **Kabyle (kab)**
-   - Resource Level: Extremely-Low
-   - Data Size: 50k
-   - Berber language spoken by the Kabyle people in northern Algeria
 
