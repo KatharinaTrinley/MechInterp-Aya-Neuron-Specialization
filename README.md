@@ -4,43 +4,56 @@
 
 The following table shows the 35 languages that appear in both the Aya101 and EC40 datasets, along with their resourcedness levels in each dataset.
 
-| ISO Code | Language Name  | Aya101 Resourcedness | EC40 Resourcedness |
-|----------|---------------|----------------------|-------------------|
-| afr      | Afrikaans     | Mid                  | Low               |
-| amh      | Amharic       | Low                  | Low               |
-| ara      | Arabic        | High                 | High              |
-| bel      | Belarusian    | Mid                  | Extremely-Low     |
-| ben      | Bengali       | Mid                  | High              |
-| bul      | Bulgarian     | Mid                  | Medium            |
-| cat      | Catalan       | High                 | Extremely-Low     |
-| ces      | Czech         | High                 | High              |
-| dan      | Danish        | Mid                  | Medium            |
-| deu      | German        | High                 | High              |
-| fra      | French        | High                 | High              |
-| guj      | Gujarati      | Low                  | Low               |
-| hau      | Hausa         | Low                  | Medium            |
-| heb      | Hebrew        | Mid                  | High              |
-| hin      | Hindi         | High                 | High              |
-| isl      | Icelandic     | Low                  | Extremely-Low     |
-| ita      | Italian       | High                 | Medium            |
-| kan      | Kannada       | Low                  | Medium            |
-| ltz      | Luxembourgish | Low                  | Low               |
-| mar      | Marathi       | Low                  | Medium            |
-| mlt      | Maltese       | Low                  | Medium            |
-| nep      | Nepali        | Low                  | Extremely-Low     |
-| nld      | Dutch         | High                 | High              |
-| nor      | Norwegian     | Low                  | Extremely-Low     |
-| pol      | Polish        | High                 | Medium            |
-| por      | Portuguese    | High                 | Medium            |
-| ron      | Romanian      | Mid                  | Low               |
-| rus      | Russian       | High                 | High              |
-| snd      | Sindhi        | Low                  | Low               |
-| som      | Somali        | Low                  | Extremely-Low     |
-| spa      | Spanish       | High                 | High              |
-| srp      | Serbian       | High                 | Low               |
-| swe      | Swedish       | High                 | Medium            |
-| ukr      | Ukrainian     | Mid                  | Low               |
-| urd      | Urdu          | Mid                  | Extremely-Low     |
+I'll add a column to indicate which languages from the table are included in Aya-23 based on the information you provided.
+
+| ISO Code | Language Name  | Aya101 Resourcedness | EC40 Resourcedness | In Aya-23 |
+|----------|---------------|----------------------|-------------------|-----------|
+| afr      | Afrikaans     | Mid                  | Low               | No        |
+| amh      | Amharic       | Low                  | Low               | No        |
+| ara      | Arabic        | High                 | High              | Yes       |
+| bel      | Belarusian    | Mid                  | Extremely-Low     | No        |
+| ben      | Bengali       | Mid                  | High              | No        |
+| bul      | Bulgarian     | Mid                  | Medium            | No        |
+| cat      | Catalan       | High                 | Extremely-Low     | No        |
+| ces      | Czech         | High                 | High              | Yes       |
+| dan      | Danish        | Mid                  | Medium            | No        |
+| deu      | German        | High                 | High              | Yes       |
+| fra      | French        | High                 | High              | Yes       |
+| guj      | Gujarati      | Low                  | Low               | No        |
+| hau      | Hausa         | Low                  | Medium            | No        |
+| heb      | Hebrew        | Mid                  | High              | Yes       |
+| hin      | Hindi         | High                 | High              | Yes       |
+| isl      | Icelandic     | Low                  | Extremely-Low     | No        |
+| ita      | Italian       | High                 | Medium            | Yes       |
+| kan      | Kannada       | Low                  | Medium            | No        |
+| ltz      | Luxembourgish | Low                  | Low               | No        |
+| mar      | Marathi       | Low                  | Medium            | No        |
+| mlt      | Maltese       | Low                  | Medium            | No        |
+| nep      | Nepali        | Low                  | Extremely-Low     | No        |
+| nld      | Dutch         | High                 | High              | Yes       |
+| nor      | Norwegian     | Low                  | Extremely-Low     | No        |
+| pol      | Polish        | High                 | Medium            | Yes       |
+| por      | Portuguese    | High                 | Medium            | Yes       |
+| ron      | Romanian      | Mid                  | Low               | Yes       |
+| rus      | Russian       | High                 | High              | Yes       |
+| snd      | Sindhi        | Low                  | Low               | No        |
+| som      | Somali        | Low                  | Extremely-Low     | No        |
+| spa      | Spanish       | High                 | High              | Yes       |
+| srp      | Serbian       | High                 | Low               | No        |
+| swe      | Swedish       | High                 | Medium            | No        |
+| ukr      | Ukrainian     | Mid                  | Low               | Yes       |
+| urd      | Urdu          | Mid                  | Extremely-Low     | No        |
+
+
+Aya-23 also supports these languages that aren't in the EC40 dataset:
+- Chinese (simplified & traditional)
+- Greek
+- Indonesian
+- Japanese
+- Korean
+- Persian
+- Turkish
+- Vietnamese
 
 ## Languages in EC40 but not in Aya101
 
