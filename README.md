@@ -2,6 +2,28 @@
 This repository contains the code for our neuron specialization experiments for the mutlilingual decoder-only LM Aya-23-8B by CohereAI 
 
 ## Content
+    ├── Aya
+    │   ├── activations_aya-23-8B
+    │   │   ├── af-en
+    │   │   │   └── activations.pkl
+    │   │   ├── am-en
+    │   │   │   └── activations.pkl
+    │   │   ├── ...
+    │   ├── logit-lens
+    │   │   ├── logit lens results
+    │   │   │   ├── afrikaans_token_matrix.csv
+    │   │   │   ├── afrikaans_wendler.png
+    │   │   │   ├── ...
+    │   │   └── logit-lens.py
+    │   ├── Neuron-Specialization
+    │   │   ├── activations_collections.log
+    │   │   ├── aya23-NS-EC40.sh
+    │   │   ├── aya_get_neurons_EC40.py
+    │   │   ├── README.md
+    └── mBart
+        ├── 3-mBart_test.sh
+        ├── mbart_activations_collection.log
+        └── mbart_get_neurons.py
 
 ## Dataset
 ### Overlapping Languages Between Aya101 and EC40
