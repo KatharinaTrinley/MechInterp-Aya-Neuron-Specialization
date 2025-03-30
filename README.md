@@ -110,7 +110,6 @@ Aya-23 also supports these languages that aren't in the EC40 dataset:
       year={2024},
       eprint={2405.15032},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}```
+      primaryClass={cs.CL}}
 
 
