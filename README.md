@@ -29,8 +29,7 @@ This repository contains the code for our neuron specialization experiments for 
 ### Overlapping Languages Between Aya101 and EC40
 
 The following table shows the 35 languages that appear in both the Aya101 and EC40 datasets, along with their resourcedness levels in each dataset.
-
-I'll add a column to indicate which languages from the table are included in Aya-23 based on the information you provided.
+<details>
 
 | ISO Code | Language Name  |EC40 Resourcedness | In Aya-23 |
 |----------|---------------|-------------------|-----------|
@@ -70,7 +69,7 @@ I'll add a column to indicate which languages from the table are included in Aya
 | ukr      | Ukrainian     |  Low               | Yes       |
 | urd      | Urdu          | Extremely-Low     | No        |
 
-
+</details>
 Aya-23 also supports these languages that aren't in the EC40 dataset:
 - Chinese (simplified & traditional)
 - Greek
