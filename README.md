@@ -1,5 +1,9 @@
 # MechInterp-Aya-Neuron-Specialization
+This repository contains the code for our neuron specialization experiments for the mutlilingual decoder-only LM Aya-23-8B by CohereAI 
 
+## Content
+
+## Dataset
 ### Overlapping Languages Between Aya101 and EC40
 
 The following table shows the 35 languages that appear in both the Aya101 and EC40 datasets, along with their resourcedness levels in each dataset.
@@ -55,17 +59,7 @@ Aya-23 also supports these languages that aren't in the EC40 dataset:
 - Turkish
 - Vietnamese
 
-## Languages in EC40 but not in Aya101
-
-The analysis identified 5 languages that appear in the EC40 dataset but are not included in the Aya101 dataset:
-
-| Code | ISO Code | Resource Level | Size |
-|------|----------|---------------|------|
-| oc   | oci      | Low           | 100k |
-| ti   | tir      | Low           | 100k |
-| ast  | ast      | Extremely-Low | 50k  |
-| bs   | bos      | Extremely-Low | 50k  |
-| kab  | kab      | Extremely-Low | 50k  |
+<details>
 
 ### Language Families:
 | Family       | Languages                                                                                                                                                            |
@@ -86,5 +80,16 @@ The analysis identified 5 languages that appear in the EC40 dataset but are not 
 | Low           | af, lb, ro, oc, uk, sr, sd, gu, ti, am           | 100k |
 | Extremely-Low | no, is, ast, ca, be, bs, ne, ur, kab, so         | 50k  |
 
+</details>
+
+## References
+```@misc{aryabumi2024aya,
+      title={Aya 23: Open Weight Releases to Further Multilingual Progress}, 
+      author={Viraat Aryabumi and John Dang and Dwarak Talupuru and Saurabh Dash and David Cairuz and Hangyu Lin and Bharat Venkitesh and Madeline Smith and Kelly Marchisio and Sebastian Ruder and Acyr Locatelli and Julia Kreutzer and Nick Frosst and Phil Blunsom and Marzieh Fadaee and Ahmet Üstün and Sara Hooker},
+      year={2024},
+      eprint={2405.15032},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}```
 
 
