@@ -104,12 +104,68 @@ Aya-23 also supports these languages that aren't in the EC40 dataset:
 </details>
 
 ## References
-```@misc{aryabumi2024aya,
+```bibtex
+@inproceedings{tan-etal-2024-neuron,
+    title = "Neuron Specialization: Leveraging Intrinsic Task Modularity for Multilingual Machine Translation",
+    author = "Tan, Shaomu  and
+      Wu, Di  and
+      Monz, Christof",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.374/",
+}
+```
+```bibtex
+@inproceedings{tan2023towards,
+  title={Towards a Better Understanding of Variations in Zero-Shot Neural Machine Translation Performance},
+  author={Tan, Shaomu and Monz, Christof},
+  booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  pages={13553--13568},
+  year={2023}
+}
+```
+
+```bibtex
+@inproceedings{tiedemann2012parallel,
+  title={Parallel data, tools and interfaces in OPUS.},
+  author={Tiedemann, J{\"o}rg},
+  booktitle={Lrec},
+  volume={2012},
+  pages={2214--2218},
+  year={2012},
+  organization={Citeseer}
+}
+```
+
+```bibtex
+@misc{aryabumi2024aya,
       title={Aya 23: Open Weight Releases to Further Multilingual Progress}, 
       author={Viraat Aryabumi and John Dang and Dwarak Talupuru and Saurabh Dash and David Cairuz and Hangyu Lin and Bharat Venkitesh and Madeline Smith and Kelly Marchisio and Sebastian Ruder and Acyr Locatelli and Julia Kreutzer and Nick Frosst and Phil Blunsom and Marzieh Fadaee and Ahmet Üstün and Sara Hooker},
       year={2024},
       eprint={2405.15032},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}}
+      primaryClass={cs.CL}
+}
+```
 
+```bibtex
+@inproceedings{federmann2022ntrex,
+  title={NTREX-128--news test references for MT evaluation of 128 languages},
+  author={Federmann, Christian and Kocmi, Tom and Xin, Ying},
+  booktitle={Proceedings of the First Workshop on Scaling Up Multilingual Evaluation},
+  pages={21--24},
+  year={2022}
+}
+```
+
+```bibtex
+@article{costa2022no,
+  title={No language left behind: Scaling human-centered machine translation},
+  author={Costa-juss{\`a}, Marta R and Cross, James and {\c{C}}elebi, Onur and Elbayad, Maha and Heafield, Kenneth and Heffernan, Kevin and Kalbassi, Elahe and Lam, Janice and Licht, Daniel and Maillard, Jean and others},
+  journal={arXiv preprint arXiv:2207.04672},
+  year={2022}
+}
+```
 
