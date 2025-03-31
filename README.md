@@ -12,7 +12,6 @@ The project explores how neurons in large multilingual models specialize in diff
 2. **Logit Lens Analysis**: Examining how token predictions develop through model layers
 3. **Cross-lingual Transfer**: Investigating how models handle both high and low-resource languages
 
-```
 
 ## Experimental Setup
 
