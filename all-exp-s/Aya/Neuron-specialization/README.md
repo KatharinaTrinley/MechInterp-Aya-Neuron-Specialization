@@ -1,6 +1,6 @@
 # Neuron Specialization in Multilingual LLMs
 
-This repository contains tools for investigating neuron specialization in the AYA-23 multilingual language model across different language pairs.
+This folder contains tools for investigating neuron specialization in the AYA-23 multilingual language model across different language pairs.
 
 ## Overview
 
