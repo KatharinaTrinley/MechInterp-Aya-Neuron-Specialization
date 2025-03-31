@@ -1,35 +1,104 @@
 # MechInterp-Aya-Neuron-Specialization
-This repository contains the code for our neuron specialization experiments for the mutlilingual decoder-only LM Aya-23-8B by CohereAI 
 
-## Content
-    ├── Aya
-    │   ├── activations_aya-23-8B
-    │   │   ├── af-en
-    │   │   │   └── activations.pkl
-    │   │   ├── am-en
-    │   │   │   └── activations.pkl
-    │   │   ├── ...
-    │   ├── logit-lens
-    │   │   ├── logit lens results
-    │   │   │   ├── afrikaans_token_matrix.csv
-    │   │   │   ├── afrikaans_wendler.png
-    │   │   │   ├── ...
-    │   │   └── logit-lens.py
-    │   ├── Neuron-Specialization
-    │   │   ├── activations_collections.log
-    │   │   ├── aya23-NS-EC40.sh
-    │   │   ├── aya_get_neurons_EC40.py
-    │   │   ├── README.md
-    └── mBart
-        ├── 3-mBart_test.sh
-        ├── mbart_activations_collection.log
-        └── mbart_get_neurons.py
+This repository contains code and results for analyzing neuron specialization and internal representations in multilingual language models, focusing on the Aya-23-8B model by CohereAI and mBart.
 
-## Dataset
-### Overlapping Languages Between Aya101 and EC40
+## Overview
+
+The project explores how neurons in large multilingual models specialize in different languages and language families. We use a combination of techniques:
+
+1. **Neuron Activation Analysis**: Tracking which neurons activate for specific language pairs
+2. **Logit Lens Analysis**: Examining how token predictions develop through model layers
+3. **Cross-lingual Transfer**: Investigating how models handle both high and low-resource languages
+
+## Repository Structure
+
+```
+├── Aya/
+│   ├── activations_aya-23-8B/      # Neuron activation data for all language pairs
+│   │   ├── af-en/
+│   │   │   └── activations.pkl
+│   │   ├── am-en/
+│   │   │   └── activations.pkl
+│   │   └── ...
+│   ├── logit-lens/                 # Logit lens analysis
+│   │   ├── logit_lens_results/
+│   │   │   ├── afrikaans_token_matrix.csv
+│   │   │   ├── afrikaans_wendler.png
+│   │   │   └── ...
+│   │   └── logit-lens.py
+│   └── Neuron-Specialization/      # Code for neuron activation collection
+│       ├── activations_collections.log
+│       ├── aya23-NS-EC40.sh
+│       ├── aya_get_neurons_EC40.py
+│       └── README.md
+└── mBart/                         # Similar analysis for mBart model
+    ├── 3-mBart_test.sh
+    ├── mbart_activations_collection.log
+    └── mbart_get_neurons.py
+```
+
+## Experimental Setup
+
+### Models
+
+- **Aya-23-8B**: A multilingual decoder-only language model by CohereAI
+- **mBart**: A multilingual encoder-decoder model for sequence-to-sequence tasks
+
+### Dataset
+
+We primarily use the EC40 dataset, which contains parallel text across 40 languages with varying resource levels:
+
+| Resource Level  | Languages                                        | Size  |
+|----------------|--------------------------------------------------|------|
+| High           | de, nl, fr, es, ru, cs, hi, bn, ar, he           | 5M   |
+| Medium         | sv, da, it, pt, pl, bg, kn, mr, mt, ha           | 1M   |
+| Low            | af, lb, ro, oc, uk, sr, sd, gu, ti, am           | 100k |
+| Extremely-Low  | no, is, ast, ca, be, bs, ne, ur, kab, so         | 50k  |
+
+For a detailed list of languages, language families, and overlap between datasets, see the [Language Details](#language-details) section.
+
+## Key Components
+
+### Neuron Activation Collection
+
+The `Neuron-Specialization` directory contains scripts for collecting neuron activations across different language pairs:
+
+- `aya23-NS-EC40.sh`: Batch script for running activation collection on all EC40 language pairs
+- `aya_get_neurons_EC40.py`: Python script that records neuron activations during translation tasks
+
+The collected activations are stored as pickle files in the `activations_aya-23-8B` directory, organized by language pair.
+
+### Logit Lens Analysis
+
+The `logit-lens` directory contains tools for analyzing the internal representations of the model:
+
+- `logit-lens.py`: Script implementing the Logit Lens technique to examine layer-wise token predictions
+- `logit_lens_results/`: Directory containing analysis results, including:
+  - CSV files with token predictions for each layer
+  - Visualization plots showing how predictions evolve through the model
+
+## Running the Code
+
+### Neuron Activation Collection
+
+```bash
+cd Aya/Neuron-Specialization
+./aya23-NS-EC40.sh
+```
+
+### Logit Lens Analysis
+
+```bash
+cd Aya/logit-lens
+python logit-lens.py
+```
+
+## Language Details
+
+<details>
+<summary>Overlapping Languages Between Aya101 and EC40</summary>
 
 The following table shows the 35 languages that appear in both the Aya101 and EC40 datasets, along with their resourcedness levels in each dataset.
-<details>
 
 | ISO Code | Language Name  |EC40 Resourcedness | In Aya-23 |
 |----------|---------------|-------------------|-----------|
@@ -68,21 +137,11 @@ The following table shows the 35 languages that appear in both the Aya101 and EC
 | swe      | Swedish       | Medium            | No        |
 | ukr      | Ukrainian     |  Low               | Yes       |
 | urd      | Urdu          | Extremely-Low     | No        |
-
 </details>
-Aya-23 also supports these languages that aren't in the EC40 dataset:
-- Chinese (simplified & traditional)
-- Greek
-- Indonesian
-- Japanese
-- Korean
-- Persian
-- Turkish
-- Vietnamese
 
 <details>
+<summary>Language Families</summary>
 
-### Language Families:
 | Family       | Languages                                                                                                                                                            |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Germanic    | German, Dutch, Swedish, Danish, Afrikaans, Luxembourgish, Norwegian, Icelandic, English, Frisian, Faroese, Yiddish, Scots                                            |
@@ -90,20 +149,17 @@ Aya-23 also supports these languages that aren't in the EC40 dataset:
 | Slavic      | Russian, Czech, Polish, Bulgarian, Ukrainian, Serbian, Belarusian, Bosnian, Slovak, Slovene, Macedonian, Montenegrin                                                 |
 | Indo-Aryan  | Hindi, Bengali, Kannada, Marathi, Sindhi, Gujarati, Nepali, Urdu, Punjabi, Assamese, Sinhala, Konkani, Maithili, Rajasthani, Bhojpuri, Odia                         |
 | Afro-Asiatic | Arabic, Hebrew, Maltese, Amharic, Tigrinya, Hausa, Kabyle, Somali, Berber                                                                                          |
-
----
-### EC40
-
-| Resource Level  | Languages                                        | Size  |
-|----------------|--------------------------------------------------|------|
-| High          | de, nl, fr, es, ru, cs, hi, bn, ar, he           | 5M   |
-| Medium        | sv, da, it, pt, pl, bg, kn, mr, mt, ha           | 1M   |
-| Low           | af, lb, ro, oc, uk, sr, sd, gu, ti, am           | 100k |
-| Extremely-Low | no, is, ast, ca, be, bs, ne, ur, kab, so         | 50k  |
-
 </details>
 
+## Key Findings
+
+- Neurons in multilingual models show specialization for specific language families
+- Cross-lingual transfer is stronger between related languages
+- High-resource languages tend to have more dedicated neurons
+- Internal representations (via Logit Lens) reveal how the model's understanding develops through layers
+
 ## References
+
 ```bibtex
 @inproceedings{tan-etal-2024-neuron,
     title = "Neuron Specialization: Leveraging Intrinsic Task Modularity for Multilingual Machine Translation",
@@ -117,6 +173,7 @@ Aya-23 also supports these languages that aren't in the EC40 dataset:
     url = "https://aclanthology.org/2024.emnlp-main.374/",
 }
 ```
+
 ```bibtex
 @inproceedings{tan2023towards,
   title={Towards a Better Understanding of Variations in Zero-Shot Neural Machine Translation Performance},
@@ -168,4 +225,3 @@ Aya-23 also supports these languages that aren't in the EC40 dataset:
   year={2022}
 }
 ```
-
