@@ -54,7 +54,7 @@ The `logit_lens_results/` directory contains:
 
 ### Example Visualizations
 
-Below are key visualizations from different language families:
+Below are visualizations from different language families as referenced in the report:
 
 #### Germanic Languages
 ![German Logit Lens](all-exp-s/Aya/logit-lens/results/german_wendler.png)
