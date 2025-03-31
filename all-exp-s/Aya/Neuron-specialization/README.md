@@ -72,6 +72,7 @@ The project uses the EC40 dataset from Hugging Face for translation examples. Ac
 ## Output
 
 Activation data is saved as pickle files in the specified output directory, organized by language pair. The results include counts of non-zero activations for each neuron across all processed examples.
+All activation (.pkl) files can be found in the following directory: `all-exp-s/Aya/activations_aya-23-8B`
 
 ## Analysis
 
