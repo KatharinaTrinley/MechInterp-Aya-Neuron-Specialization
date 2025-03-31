@@ -1,0 +1,8 @@
+cover rate of the train set: 0.7897849973515151
+vocab size of the train set: 349682
+
+after removing, the size of the vocab is :349568
+
+the coverage of top 100 thousand words is: 
+cover rate of the train set: 0.3585233677862741
+vocab size of the train set: 100000
