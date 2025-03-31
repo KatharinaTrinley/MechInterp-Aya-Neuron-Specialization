@@ -1,6 +1,6 @@
 # MechInterp-Codemixing (Toshiki's Part)
 
-# MechInterp-Aya-Neuron-Specialization (Katharina's Part)
+# Neuron-Specialization (Katharina's Part)
 
 This repository contains code and results for analyzing neuron specialization and internal representations in multilingual language models, focusing on the Aya-23-8B model by CohereAI and mBart.
 
