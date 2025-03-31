@@ -12,31 +12,6 @@ The project explores how neurons in large multilingual models specialize in diff
 2. **Logit Lens Analysis**: Examining how token predictions develop through model layers
 3. **Cross-lingual Transfer**: Investigating how models handle both high and low-resource languages
 
-## Repository Structure
-
-```
-├── Aya/
-│   ├── activations_aya-23-8B/      # Neuron activation data for all language pairs
-│   │   ├── af-en/
-│   │   │   └── activations.pkl
-│   │   ├── am-en/
-│   │   │   └── activations.pkl
-│   │   └── ...
-│   ├── logit-lens/                 # Logit lens analysis
-│   │   ├── logit_lens_results/
-│   │   │   ├── afrikaans_token_matrix.csv
-│   │   │   ├── afrikaans_wendler.png
-│   │   │   └── ...
-│   │   └── logit-lens.py
-│   └── Neuron-Specialization/      # Code for neuron activation collection
-│       ├── activations_collections.log
-│       ├── aya23-NS-EC40.sh
-│       ├── aya_get_neurons_EC40.py
-│       └── README.md
-└── mBart/                         # Similar analysis for mBart model
-    ├── 3-mBart_test.sh
-    ├── mbart_activations_collection.log
-    └── mbart_get_neurons.py
 ```
 
 ## Experimental Setup
