@@ -1,4 +1,4 @@
-# MechInterp-Codemixing (Toshiki's Part)
+# Codemixing (Toshiki's Part)
 
 # Neuron-Specialization (Katharina's Part)
 
