@@ -127,12 +127,6 @@ The following table shows the 35 languages that appear in both the Aya101 and EC
 | Afro-Asiatic | Arabic, Hebrew, Maltese, Amharic, Tigrinya, Hausa, Kabyle, Somali, Berber                                                                                          |
 </details>
 
-## Key Findings
-
-- Neurons in multilingual models show specialization for specific language families
-- Cross-lingual transfer is stronger between related languages
-- High-resource languages tend to have more dedicated neurons
-- Internal representations (via Logit Lens) reveal how the model's understanding develops through layers
 
 ## References
 
